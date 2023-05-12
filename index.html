@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facturi Enel</title>
+	<style>
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+
+		input[type="text"], input[type="number"], input[type="date"], input[type="email"], input[type="tel"], input[type="url"], select {
+			display: block;
+			padding: 10px;
+			margin-bottom: 20px;
+			width: 100%;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<h1>Facturi Enel</h1>
+	<form>
+		<label for="data-factura">Data Factura:</label>
+		<input type="text" id="data-factura" name="data-factura">
+
+		<label for="perioada-facturare">Perioada facturare:</label>
+		<input type="text" id="perioada-facturare-start" name="perioada-facturare-start">
+
+		<label for="total-plata">Total de Plata:</label>
+		<input type="text" id="total-plata" name="total-plata" step="0.01" min="0">
+
+		<label for="cantitate">Cantitate (kWH):</label>
+		<input type="text" id="cantitate" name="cantitate" step="0.01" min="0">
+
+		<label for="pret-ron">Pret / kWH (RON):</label>
+		<input type="text" id="pret-ron" name="pret-ron" step="0.01" min="0">
+
+		<label for="pret-eur">Pret / kWH (EUR):</label>
+		<input type="text" id="pret-eur" name="pret-eur" step="0.01" min="0">
+
+		<label for="id-factura">ID Factura:</label>
+		<input type="text" id="id-factura" name="id-factura">
+
+		<label for="cod-plata">Cod de Plata:</label>
+		<input type="text" id="cod-plata" name="cod-plata">
+
+		<label for="anul">Anul:</label>
+		<input type="number" id="anul" name="anul" min="1900" max="2099" step="1">
+
+		<input type="button" value="Submit">
+	</form>
+</body>
+</html>
